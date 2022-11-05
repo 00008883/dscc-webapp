@@ -1,0 +1,90 @@
+﻿@model MVC_DSCC_8883.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Employee Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BranchCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+
+        <dt>
+            Branch  @Html.DisplayNameFor(model => model.BranchInfo.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchInfo.Name)
+        </dd>
+
+        <dt>
+            Branch @Html.DisplayNameFor(model => model.BranchInfo.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchInfo.City)
+        </dd>
+
+        <dt>
+            Branch @Html.DisplayNameFor(model => model.BranchInfo.Street)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchInfo.Street)
+        </dd>
+
+        <dt>
+            Branch @Html.DisplayNameFor(model => model.BranchInfo.PostCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchInfo.PostCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
