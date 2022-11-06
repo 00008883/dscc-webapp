@@ -1,0 +1,82 @@
+﻿@model MVC_DSCC_8883.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductProducer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductProducer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuppliedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuppliedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
