@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: MVCPublish
-    destination: c:\inetpub\wwwroot\
+    destination: c:\inetpub\wwwroot\MVCPublish
   - source: deletewebsite.ps1
     destination: c:\temp
   - source: installwebsite.ps1
